@@ -5,7 +5,7 @@ describe 'GithubRepo' do
     it "sets key 'name' to @name" do
       repo = GithubRepo.new({"name" => 'a-repo', "html_url" => 'http://path.com'})
       expect(repo.name).to eq('a-repo')
-    end
+  end
 
     it "sets key 'html_url' to @url" do
       repo = GithubRepo.new({"name" => 'a-repo', "html_url" => 'http://path.com'})
